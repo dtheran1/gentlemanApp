@@ -1,0 +1,13 @@
+<app-main-container>
+  <div class="social-media-container">
+    <h2>Mis Redes</h2>
+    <div class="social-media-elements">
+      <ng-container *ngFor="let socialMediaElement of socialMediaList; trackBy: trackByName">
+        <app-social-media-element [socialMediaElement]="socialMediaElement"></app-social-media-element>
+      </ng-container>
+    </div>
+  </div>
+  <div style="height: 900px;">
+    Daniel
+  </div>
+</app-main-container>
